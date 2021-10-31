@@ -1,0 +1,16 @@
+version: '3.7'
+services:
+  devkit:
+    container_name: devkit
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file: /etc/environment
+    ports:
+      - "8080:8080"
+    volumes:
+      - "./static:/root/static"
+      - "./views:/root/views"
+    restart: always
+    extra_hosts:
+      - "node:172.17.0.1"

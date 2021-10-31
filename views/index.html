@@ -1,0 +1,9 @@
+[[template "header" .]]
+<div class="container" id="app">
+  <ul>
+  [[range .List]]
+  <li><a href="[[.]]"> [[.]] </a></li>
+  [[end]]
+  <ul>
+</div>
+[[template "footer" .]]
