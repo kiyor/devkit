@@ -10,7 +10,7 @@
 
 - `cp views/empty.html views/newpage.html`
 - add content inside `views/newpage.html`
-- add css inside `static/css/newpage.html`
+- add css inside `static/css/newpage.css`
 - add js inside `static/js/newpage.js`
 
 ## Add new api
